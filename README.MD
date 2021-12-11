@@ -18,14 +18,14 @@ Para executar o projeto, será necessário instalar os seguintes programas:
 
 - [Java 1.8: Necessário para executar o projeto Java]
 - [Spring Tool Suite 4-4.12.1]
-- 
-- ## Desenvolvimento
+
+## Desenvolvimento
 
 Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub num diretório de sua preferência:
 
 ### Construção
 
-Para construir o projeto , basta importar o projeto para sua IDE de preferencia o Spring Tool Suite Eclipse, fazer um update do projeto do maven e rodas a classe TinnovaTestDevApplication.class
+Para construir o projeto , basta importar o projeto para sua IDE de preferencia o Spring Tool Suite Eclipse, fazer um update do projeto do maven e rodar a classe TinnovaTestDevApplication.class
 
 ## Features
 
