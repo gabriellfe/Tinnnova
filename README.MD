@@ -8,5 +8,34 @@
 - 👯 Estou procurando colaborar em projetos de alto nível em que possa colaborar com minha experiência e conhecimento
 
 
-# Tinnova
+# TinnovaDevTest
 
+Esse projeto ilustra o teste solicitado com java 1.8 e Spring Framework.
+
+## Começando
+
+Para executar o projeto, será necessário instalar os seguintes programas:
+
+- [Java 1.8: Necessário para executar o projeto Java]
+- [Spring Tool Suite 4-4.12.1]
+- 
+- ## Desenvolvimento
+
+Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub num diretório de sua preferência:
+
+### Construção
+
+Para construir o projeto , basta importar o projeto para sua IDE de preferencia o Spring Tool Suite Eclipse, fazer um update do projeto do maven e rodas a classe TinnovaTestDevApplication.class
+
+## Features
+
+O projeto pode ser usado como modelo para iniciar o desenvolvimento de um projeto Java usando o Maven. Ele também demonstra de forma prática como configurar e subir um projeto Java já com um servidor do spring.
+
+## Testes
+
+Para rodar os testes rodas a clase ServiceTest.class com o JUnit
+
+
+## Contribuições
+
+Contribuições são sempre bem-vindas!
