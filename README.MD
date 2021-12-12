@@ -33,7 +33,7 @@ O projeto pode ser usado como modelo para iniciar o desenvolvimento de um projet
 
 ## Testes
 
-Para rodar os testes rodas a clase ServiceTest.class com o JUnit
+Para rodar os testes rodas a clase TinnovaTestDevApplicationTests.class com o JUnit
 
 
 ## Contribuições
