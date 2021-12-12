@@ -1,7 +1,7 @@
 ### Olá pessoal 👋
 
 <! --
-**gabriellfe/Tinnnova** é um repositório ✨ _especial_ ✨ 
+**gabriellfe/Tinnnova**
 
 - 🔭 Atualmente estou trabalhando em CedroTechnologies alocado no BTGPactual
 - 🌱 Atualmente estou me especializando em Spring RestFull API por um curso da AlgaWorks
