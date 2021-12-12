@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 import br.com.tinnova.domain.exception.EntidadeNaoEncontradaException;
 import br.com.tinnova.domain.model.Veiculo;
-import br.com.tinnova.domain.model.VeiculoDTO;
 import br.com.tinnova.domain.repository.VeiculoRepository;
 
 /**

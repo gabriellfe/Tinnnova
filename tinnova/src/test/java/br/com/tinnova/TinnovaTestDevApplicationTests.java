@@ -14,7 +14,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import br.com.tinnova.domain.exception.EntidadeNaoEncontradaException;
 import br.com.tinnova.domain.model.Veiculo;
-import br.com.tinnova.domain.model.VeiculoDTO;
 import br.com.tinnova.domain.repository.VeiculoRepository;
 import br.com.tinnova.domain.service.VeiculoService;
 
@@ -40,7 +39,7 @@ class TinnovaTestDevApplicationTests {
 
 	@Test
 	public void buscarVeiculosPorNomeTest() {
-		VeiculoDTO veiculoBusca = new VeiculoDTO();
+		Veiculo veiculoBusca = new Veiculo();
 		veiculoBusca.setVeiculo("FOX");
 		List<Veiculo> listaRetorno = veiculoService.find(veiculoBusca);
 		Veiculo veiculoRetorno = new Veiculo();
