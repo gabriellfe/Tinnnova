@@ -29,14 +29,21 @@ public class VeiculoService {
 	 */
 
 	public Veiculo salvar(Veiculo veiculo) {
-		veiculo.setDescricao(veiculo.getDescricao().toUpperCase());
-		veiculo.setMarca(veiculo.getMarca().toUpperCase());
-		veiculo.setVeiculo(veiculo.getVeiculo().toUpperCase());
-
 		// Validando marca
 		if (validaMarca(veiculo.getMarca())) {
 			throw new EntidadeNaoEncontradaException(String.format("Marca inválida"));
 		}
+		if (veiculo.getDescricao() == null || veiculo.getDescricao().isEmpty()) {
+			throw new EntidadeNaoEncontradaException(String.format("Descrição inválida !!"));
+		}
+		if (veiculo.getVeiculo() == null || veiculo.getVeiculo().isEmpty()) {
+			throw new EntidadeNaoEncontradaException(String.format("Nome do veículo inválido !!"));
+		}
+		
+		veiculo.setDescricao(veiculo.getDescricao().toUpperCase());
+		veiculo.setMarca(veiculo.getMarca().toUpperCase());
+		veiculo.setVeiculo(veiculo.getVeiculo().toUpperCase());
+
 		return veiculoRepository.save(veiculo);
 	}
 
