@@ -14,8 +14,8 @@ public class ExerciciosUmAoQuatro {
 		System.out.println(percentualVotosBrancos().multiply(BigDecimal.valueOf(100)) + "% de votos brancos");
 		System.out.println(percentualVotosNulos().multiply(BigDecimal.valueOf(100)) + "% de votos nulos");
 		bubbleSort();
-		calculaFatorial(9);
-		somaMultiplos(100);
+		calculaFatorial(9); /*Informar qual o fatorial quer*/
+		somaMultiplos(100);  /*Informar até qual numero verificar multiplo*/
 	}
 
 	public static BigDecimal percentualVotosValidos() {
