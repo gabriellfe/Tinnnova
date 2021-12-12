@@ -24,6 +24,12 @@ import br.com.tinnova.domain.model.Veiculo;
 import br.com.tinnova.domain.repository.VeiculoRepository;
 import br.com.tinnova.domain.service.VeiculoService;
 
+/**
+ * Classe responsável pelos endpoints para alteração, cadastro e busca de Veículos
+ * @author Gabriell Marques de Felipe {11/12/2021}
+ * @version 1.0
+ */
+
 @RestController
 @RequestMapping(value = "/veiculos")
 public class VeiculoController {

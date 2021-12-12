@@ -22,13 +22,12 @@ public class VeiculoRepositoryImpl implements VeiculoRepositoryQueries {
 	@PersistenceContext
 	private EntityManager manager;
 
-	@SuppressWarnings("unchecked")
 	@Override
 	public List<Veiculo> find(Integer ano, LocalDate created, String descricao, String marca, LocalDate updated,
 			String veiculo, boolean vendido) {
 		CriteriaBuilder builder = manager.getCriteriaBuilder();
-		CriteriaQuery criteria = builder.createQuery(Veiculo.class);
-		Root root = criteria.from(Veiculo.class);
+		CriteriaQuery<Veiculo> criteria = builder.createQuery(Veiculo.class);
+		Root<Veiculo> root = criteria.from(Veiculo.class);
 		List<Predicate> predicates = new ArrayList<Predicate>();
 		
 
