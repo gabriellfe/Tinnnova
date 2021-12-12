@@ -18,6 +18,7 @@ Para executar o projeto, será necessário instalar os seguintes programas:
 
 - [Java 1.8: Necessário para executar o projeto Java]
 - [Spring Tool Suite 4-4.12.1]
+- [Lomobok instalado na sua IDE]
 
 ## Desenvolvimento
 
@@ -25,7 +26,7 @@ Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub num di
 
 ### Construção
 
-Para construir o projeto , basta importar o projeto para sua IDE, de preferencia o Spring Tool Suite Eclipse, fazer um update do projeto do maven e rodar a classe TinnovaTestDevApplication.class, irá subir com um banco H2 populado, login: sa, com senha vazia.
+Para construir o projeto , basta importar o projeto para sua IDE, de preferencia o Spring Tool Suite Eclipse, fazer um update do projeto do maven e rodar a classe TinnovaTestDevApplication.class, irá subir com um banco H2 populado, login: sa, com senha vazia, caso ele não leia o arquivo import.sql, colocar o arquivo no diretorio tinnova\target\classes
 
 ## Desafios
 
