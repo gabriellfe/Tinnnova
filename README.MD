@@ -27,6 +27,10 @@ Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub num di
 
 Para construir o projeto , basta importar o projeto para sua IDE, de preferencia o Spring Tool Suite Eclipse, fazer um update do projeto do maven e rodar a classe TinnovaTestDevApplication.class, irá subir com um banco H2 populado, login: sa, com senha vazia.
 
+## Desafios
+
+Rodar a main da classe ExerciciosUmAoQuatro.
+
 ## Features
 
 O projeto pode ser usado como modelo para iniciar o desenvolvimento de um projeto Java usando o Maven. Ele também demonstra de forma prática como configurar e subir um projeto Java já com um servidor do spring.
