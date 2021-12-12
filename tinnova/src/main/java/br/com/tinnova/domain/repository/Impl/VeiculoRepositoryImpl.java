@@ -17,10 +17,24 @@ import org.springframework.util.StringUtils;
 import br.com.tinnova.domain.model.Veiculo;
 import br.com.tinnova.domain.repository.VeiculoRepositoryQueries;
 
+/**
+ * Classe responsável pela implementação de novas Queries para VeiculoRepository
+ * @author Gabriell Marques de Felipe {11/12/2021}
+ * @version 1.0
+ */
+
+
 public class VeiculoRepositoryImpl implements VeiculoRepositoryQueries {
 
 	@PersistenceContext
 	private EntityManager manager;
+	
+	
+	/**
+	 * Metodo responsável por buscar um veiculo de acordo com os atributos recebidos
+	 * @author Gabriell Marques de Felipe {11/12/2021}
+	 */
+
 
 	@Override
 	public List<Veiculo> find(Integer ano, LocalDate created, String descricao, String marca, LocalDate updated,

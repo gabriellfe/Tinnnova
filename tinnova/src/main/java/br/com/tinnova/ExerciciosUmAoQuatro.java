@@ -15,7 +15,7 @@ public class ExerciciosUmAoQuatro {
 		System.out.println(percentualVotosNulos().multiply(BigDecimal.valueOf(100)) + "% de votos nulos");
 		bubbleSort();
 		calculaFatorial(9); /*Informar qual o fatorial quer*/
-		somaMultiplos(100);  /*Informar até qual numero verificar multiplo*/
+		somaMultiplos(10);  /*Informar até qual numero verificar multiplo*/
 	}
 
 	public static BigDecimal percentualVotosValidos() {
@@ -46,14 +46,14 @@ public class ExerciciosUmAoQuatro {
 
 	public static void ordenar(int[] vetor) {
 
-		for (int i = 0; i < vetor.length - 1; i++) {
+		for (int a = 0; a < vetor.length - 1; a++) {
 
-			for (int j = 0; j < vetor.length - 1 - i; j++) {
+			for (int b = 0; b < vetor.length - 1 - a; b++) {
 
-				if (vetor[j] > vetor[j + 1]) {
-					int aux = vetor[j];
-					vetor[j] = vetor[j + 1];
-					vetor[j + 1] = aux;
+				if (vetor[b] > vetor[b + 1]) {
+					int c = vetor[b];
+					vetor[b] = vetor[b + 1];
+					vetor[b + 1] = c;
 				}
 			}
 		}
@@ -61,12 +61,12 @@ public class ExerciciosUmAoQuatro {
 
 	public static void calculaFatorial(int valorFatorial) {
 		System.out.println();
-		int fat = 1;
+		int fatorando = 1;
 		int valor = valorFatorial;
 		for (int i = 2; i <= valor; i++) {
-			fat *= i;
+			fatorando *= i;
 		}
-		System.out.print("O fatorial de " + valor + " é igual a " + fat);
+		System.out.print("O fatorial de " + valor + " é igual a " + fatorando);
 	}
 
 	public static void somaMultiplos(int numero) {
