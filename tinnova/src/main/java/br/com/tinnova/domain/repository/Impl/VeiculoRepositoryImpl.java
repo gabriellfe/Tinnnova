@@ -38,12 +38,12 @@ public class VeiculoRepositoryImpl implements VeiculoRepositoryQueries {
 
 	@Override
 	public List<Veiculo> find(Integer ano, LocalDate created, String descricao, String marca, LocalDate updated,
-			String veiculo, boolean vendido) {
+			String veiculo, String vendido) {
 		CriteriaBuilder builder = manager.getCriteriaBuilder();
 		CriteriaQuery<Veiculo> criteria = builder.createQuery(Veiculo.class);
 		Root<Veiculo> root = criteria.from(Veiculo.class);
 		List<Predicate> predicates = new ArrayList<Predicate>();
-		
+		String isVendido = "";
 
 		if (StringUtils.hasText(veiculo)) {
 			String veiculoUpper = veiculo.toUpperCase();
@@ -66,8 +66,11 @@ public class VeiculoRepositoryImpl implements VeiculoRepositoryQueries {
 		if (updated != null) {
 			predicates.add(builder.equal(root.get("updated"),updated));
 		}	
-		if (vendido == true) {
-			predicates.add(builder.equal(root.get("vendido"),vendido));
+		if (vendido != null && vendido.equals("true")) {
+			predicates.add(builder.equal(root.get("vendido"),Boolean.parseBoolean(vendido)));
+		}	
+		if (vendido != null && vendido.equals("false")) {
+			predicates.add(builder.equal(root.get("vendido"),Boolean.parseBoolean(vendido)));
 		}	
 		
 		criteria.where(predicates.toArray(new Predicate[0]));

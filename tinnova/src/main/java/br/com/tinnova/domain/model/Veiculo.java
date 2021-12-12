@@ -13,7 +13,7 @@ import lombok.Data;
 @Data
 @Entity(name = "TB_VEICULO")
 public class Veiculo {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ID_VEICULO")
@@ -28,10 +28,9 @@ public class Veiculo {
 	private String descricao;
 	@Column(nullable = false, name = "DS_VENDIDO")
 	private boolean vendido;
-	@Column(nullable = false, name = "DT_CREATED")
+	@Column(name = "DT_CREATED")
 	private LocalDate created;
-	@Column(nullable = false, name = "DT_UPDATED")
+	@Column(name = "DT_UPDATED")
 	private LocalDate updated;
-	
 
 }

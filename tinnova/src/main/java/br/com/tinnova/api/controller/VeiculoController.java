@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.tinnova.domain.exception.EntidadeEmUsoException;
 import br.com.tinnova.domain.exception.EntidadeNaoEncontradaException;
 import br.com.tinnova.domain.model.Veiculo;
+import br.com.tinnova.domain.model.VeiculoDTO;
 import br.com.tinnova.domain.repository.VeiculoRepository;
 import br.com.tinnova.domain.service.VeiculoService;
 
@@ -56,7 +57,7 @@ public class VeiculoController {
 	}
 
 	@GetMapping("/find")
-	public List<Veiculo> buscarVeiculo(@RequestBody Veiculo veiculo) {
+	public List<Veiculo> buscarVeiculo(@RequestBody VeiculoDTO veiculo) {
 		return veiculoService.find(veiculo);
 	}
 
