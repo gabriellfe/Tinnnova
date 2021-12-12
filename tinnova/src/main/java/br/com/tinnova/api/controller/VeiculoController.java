@@ -57,7 +57,7 @@ public class VeiculoController {
 	}
 
 	@GetMapping("/find")
-	public List<Veiculo> buscarVeiculo(@RequestBody VeiculoDTO veiculo) {
+	public List<Veiculo> buscarVeiculo(@RequestBody Veiculo veiculo) {
 		return veiculoService.find(veiculo);
 	}
 
@@ -128,8 +128,8 @@ public class VeiculoController {
 				if (veiculo.getVeiculo() != null && !veiculo.getVeiculo().isEmpty()) {
 					veiculoAtual.setVeiculo(veiculo.getVeiculo());
 				}
-				if (veiculo.isVendido() != !veiculoAtual.isVendido()) {
-					veiculoAtual.setVendido(veiculo.isVendido());
+				if (veiculo.getVendido()!= null && veiculo.getVendido() != veiculoAtual.getVendido()) {
+					veiculoAtual.setVendido(veiculo.getVendido());
 				}
 
 				veiculoAtual.setUpdated(LocalDate.now());

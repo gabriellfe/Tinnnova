@@ -59,7 +59,7 @@ public class VeiculoService {
 	 * Metodo para buscar veículos por qualquer atributo
 	 */
 
-	public List<Veiculo> find(VeiculoDTO veiculo) {
+	public List<Veiculo> find(Veiculo veiculo) {
 		return veiculoRepository.find(veiculo.getAno(), veiculo.getCreated(), veiculo.getDescricao(),
 				veiculo.getMarca(), veiculo.getUpdated(), veiculo.getVeiculo(), veiculo.getVendido());
 	}

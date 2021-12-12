@@ -27,7 +27,7 @@ public class Veiculo {
 	@Column(nullable = false, name = "DS_DESCRICAO")
 	private String descricao;
 	@Column(nullable = false, name = "DS_VENDIDO")
-	private boolean vendido;
+	private Boolean vendido;
 	@Column(name = "DT_CREATED")
 	private LocalDate created;
 	@Column(name = "DT_UPDATED")

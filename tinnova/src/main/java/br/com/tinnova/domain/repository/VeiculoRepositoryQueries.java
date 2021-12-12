@@ -7,8 +7,12 @@ import br.com.tinnova.domain.model.Veiculo;
 
 public interface VeiculoRepositoryQueries {
 	
-	List<Veiculo> find(Integer ano, 
-			LocalDate created, String descricao, String marca, LocalDate updated,String veiculo, String vendido);
+	/**
+	 * Metodo responsável por buscar um veiculo de acordo com os atributos recebidos
+	 * @author Gabriell Marques de Felipe {11/12/2021}
+	 */
+	List<Veiculo> find(Integer ano, LocalDate created, String descricao, String marca, LocalDate updated,
+			String veiculo, Boolean vendido);
 	
 	
 	
